@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="gUs-J0-gMF">
             <objects>
-                <viewController id="dVR-tL-jXQ" sceneMemberID="viewController">
+                <viewController id="dVR-tL-jXQ" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xEv-tb-c9I">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="QDI-gP-lze">
             <objects>
-                <viewController id="PBt-to-bvu" sceneMemberID="viewController">
+                <viewController id="PBt-to-bvu" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bVE-gW-UhY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="kCm-LG-q5F">
             <objects>
-                <viewController id="bdX-xu-gjF" sceneMemberID="viewController">
+                <viewController id="bdX-xu-gjF" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nYm-a7-D1p">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="0Ne-92-FQ8">
             <objects>
-                <viewController id="nR9-a3-e29" sceneMemberID="viewController">
+                <viewController id="nR9-a3-e29" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5Y-Ob-LaS">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,7 +250,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="KAx-LN-Cgn">
             <objects>
-                <viewController id="fYd-GX-Hm7" sceneMemberID="viewController">
+                <viewController id="fYd-GX-Hm7" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipk-HB-1Ue">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,7 +286,7 @@ You wake up.</string>
         <!--View Controller-->
         <scene sceneID="FjW-es-ZWd">
             <objects>
-                <viewController id="Ugq-NI-0cJ" sceneMemberID="viewController">
+                <viewController id="Ugq-NI-0cJ" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11k-T7-XHp">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +322,7 @@ You wake up.</string>
         <!--View Controller-->
         <scene sceneID="dx1-ll-88R">
             <objects>
-                <viewController id="L4g-Sb-SQg" sceneMemberID="viewController">
+                <viewController id="L4g-Sb-SQg" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zHd-or-lQj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,8 +358,8 @@ You wake up.</string>
         <!--View Controller-->
         <scene sceneID="GO0-6z-4gk">
             <objects>
-                <viewController id="s23-83-g6Q" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CLL-b6-UBa">
+                <viewController id="s23-83-g6Q" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CLL-b6-UBa" customClass="View">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -394,7 +394,7 @@ You wake up.</string>
         <!--View Controller-->
         <scene sceneID="5hN-uC-qxi">
             <objects>
-                <viewController id="BvV-qQ-g0G" sceneMemberID="viewController">
+                <viewController id="BvV-qQ-g0G" customClass="ViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XQB-4e-iTo">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
