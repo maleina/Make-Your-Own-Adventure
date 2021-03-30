@@ -22,7 +22,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-208" y="94"/>
+            <point key="canvasLocation" x="-314" y="480"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gUs-J0-gMF">
@@ -80,7 +80,7 @@ What should she do?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOO-xe-dZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="494" y="94"/>
+            <point key="canvasLocation" x="462" y="480"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QDI-gP-lze">
@@ -93,10 +93,16 @@ What should she do?</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-KE-ebN">
                                 <rect key="frame" x="0.0" y="694" width="390" height="30"/>
                                 <state key="normal" title="Wait to see what happens next."/>
+                                <connections>
+                                    <segue destination="s23-83-g6Q" kind="show" id="ws6-Tr-iBE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XF-gJ-PjL">
                                 <rect key="frame" x="0.0" y="752" width="390" height="30"/>
                                 <state key="normal" title="Attack the old man!"/>
+                                <connections>
+                                    <segue destination="BvV-qQ-g0G" kind="show" id="Rxs-RX-Gkz"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pbV-c8-p7Z">
                                 <rect key="frame" x="20" y="120" width="350" height="200"/>
@@ -130,7 +136,7 @@ What should she do?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huV-fe-Qxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="-45"/>
+            <point key="canvasLocation" x="1246" y="269"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kCm-LG-q5F">
@@ -143,10 +149,16 @@ What should she do?</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHp-mw-YfG">
                                 <rect key="frame" x="0.0" y="694" width="390" height="30"/>
                                 <state key="normal" title="Attack the old man!"/>
+                                <connections>
+                                    <segue destination="L4g-Sb-SQg" kind="show" id="DLo-Hb-tvW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krc-Pk-QDn">
                                 <rect key="frame" x="0.0" y="752" width="390" height="30"/>
                                 <state key="normal" title="Pad quietly down the hallway."/>
+                                <connections>
+                                    <segue destination="nR9-a3-e29" kind="show" id="wOD-jf-K5L"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="An old man sleeps in a chair in the hallway. He has a rifle." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-Mp-KSm">
                                 <rect key="frame" x="20" y="120" width="350" height="200"/>
@@ -177,7 +189,243 @@ What should she do?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ht-A9-o5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248" y="629"/>
+            <point key="canvasLocation" x="1245" y="1223"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Ne-92-FQ8">
+            <objects>
+                <viewController id="nR9-a3-e29" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c5Y-Ob-LaS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG1-cu-Zbc">
+                                <rect key="frame" x="0.0" y="694" width="390" height="30"/>
+                                <state key="normal" title="Wait to see what happens next."/>
+                                <connections>
+                                    <segue destination="fYd-GX-Hm7" kind="show" id="CL3-oH-YBt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Keu-Hd-XGX">
+                                <rect key="frame" x="0.0" y="752" width="390" height="30"/>
+                                <state key="normal" title="Go through the right door!"/>
+                                <connections>
+                                    <segue destination="Ugq-NI-0cJ" kind="show" id="RvS-95-4Ke"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nal-Xl-XwU">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="wHP-M2-7Zj"/>
+                                </constraints>
+                                <string key="text">The girl passes the man and follows the tiger who turns right into an open door.
+
+What should she do?</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sD4-1E-OxL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Keu-Hd-XGX" firstAttribute="leading" secondItem="sD4-1E-OxL" secondAttribute="leading" id="4aq-gd-zjd"/>
+                            <constraint firstItem="qG1-cu-Zbc" firstAttribute="leading" secondItem="sD4-1E-OxL" secondAttribute="leading" id="9B9-SW-ATB"/>
+                            <constraint firstItem="sD4-1E-OxL" firstAttribute="trailing" secondItem="qG1-cu-Zbc" secondAttribute="trailing" id="EJD-E7-rBU"/>
+                            <constraint firstItem="nal-Xl-XwU" firstAttribute="top" secondItem="sD4-1E-OxL" secondAttribute="top" constant="32" id="Lrt-qK-S83"/>
+                            <constraint firstItem="sD4-1E-OxL" firstAttribute="trailing" secondItem="nal-Xl-XwU" secondAttribute="trailing" constant="20" id="UOI-pw-g3K"/>
+                            <constraint firstItem="Keu-Hd-XGX" firstAttribute="top" secondItem="qG1-cu-Zbc" secondAttribute="bottom" constant="28" id="Vn4-BJ-Lky"/>
+                            <constraint firstItem="sD4-1E-OxL" firstAttribute="bottom" secondItem="Keu-Hd-XGX" secondAttribute="bottom" constant="28" id="hue-Rg-j64"/>
+                            <constraint firstItem="sD4-1E-OxL" firstAttribute="trailing" secondItem="Keu-Hd-XGX" secondAttribute="trailing" id="j5B-EI-T3X"/>
+                            <constraint firstItem="nal-Xl-XwU" firstAttribute="leading" secondItem="sD4-1E-OxL" secondAttribute="leading" constant="20" id="qLe-vY-yDR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fZX-NV-heM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zds-gS-ARD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="1665"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KAx-LN-Cgn">
+            <objects>
+                <viewController id="fYd-GX-Hm7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipk-HB-1Ue">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EYb-k6-GCY">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gcQ-L5-WrU"/>
+                                </constraints>
+                                <string key="text">The old man wakes up. He grabs the rifle at his side and aims at the girl. She turns and looks at him. Boom!
+
+You wake up.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="giZ-uD-0Sl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EYb-k6-GCY" firstAttribute="top" secondItem="giZ-uD-0Sl" secondAttribute="top" constant="32" id="UQ7-wh-mkD"/>
+                            <constraint firstItem="giZ-uD-0Sl" firstAttribute="trailing" secondItem="EYb-k6-GCY" secondAttribute="trailing" constant="20" id="iWG-07-wBY"/>
+                            <constraint firstItem="EYb-k6-GCY" firstAttribute="leading" secondItem="giZ-uD-0Sl" secondAttribute="leading" constant="20" id="yhL-8g-Ey8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H93-lY-Skb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6b-Bb-37t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="1409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FjW-es-ZWd">
+            <objects>
+                <viewController id="Ugq-NI-0cJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="11k-T7-XHp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MMN-wn-1wM">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="hwU-fb-Gln"/>
+                                </constraints>
+                                <string key="text">The tiger leaps at the girl and opens his mouth wide.
+
+You wake up.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KDL-Ck-U6M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MMN-wn-1wM" firstAttribute="leading" secondItem="KDL-Ck-U6M" secondAttribute="leading" constant="20" id="DfY-rg-Ly7"/>
+                            <constraint firstItem="KDL-Ck-U6M" firstAttribute="trailing" secondItem="MMN-wn-1wM" secondAttribute="trailing" constant="20" id="cF4-OY-y8n"/>
+                            <constraint firstItem="MMN-wn-1wM" firstAttribute="top" secondItem="KDL-Ck-U6M" secondAttribute="top" constant="32" id="tdq-vE-0BD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VtQ-M1-RSf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3k-a7-hX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="2098"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dx1-ll-88R">
+            <objects>
+                <viewController id="L4g-Sb-SQg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zHd-or-lQj">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1yi-GR-eDo">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kQI-Fm-y4o"/>
+                                </constraints>
+                                <string key="text">The girl leaps towards the man. She grabs the rifle. Boom!
+
+You wake up.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GBv-Lc-o6f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GBv-Lc-o6f" firstAttribute="trailing" secondItem="1yi-GR-eDo" secondAttribute="trailing" constant="20" id="5C4-Xk-MeF"/>
+                            <constraint firstItem="1yi-GR-eDo" firstAttribute="top" secondItem="GBv-Lc-o6f" secondAttribute="top" constant="32" id="Qmv-IL-FsN"/>
+                            <constraint firstItem="1yi-GR-eDo" firstAttribute="leading" secondItem="GBv-Lc-o6f" secondAttribute="leading" constant="20" id="j8w-9a-kxu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="20h-NL-7Hg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ErB-kq-cUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="1010"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GO0-6z-4gk">
+            <objects>
+                <viewController id="s23-83-g6Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CLL-b6-UBa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b0l-TN-v8O">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="tQL-dh-5dt"/>
+                                </constraints>
+                                <string key="text">Boom. The old man shoots the tiger, but suddenly the tiger turns into a dragon and charges both the man and the girl.
+
+You wake up.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rD4-Nw-4Md"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rD4-Nw-4Md" firstAttribute="trailing" secondItem="b0l-TN-v8O" secondAttribute="trailing" constant="20" id="d5o-lO-h0j"/>
+                            <constraint firstItem="b0l-TN-v8O" firstAttribute="leading" secondItem="rD4-Nw-4Md" secondAttribute="leading" constant="20" id="qhk-t1-iE2"/>
+                            <constraint firstItem="b0l-TN-v8O" firstAttribute="top" secondItem="rD4-Nw-4Md" secondAttribute="top" constant="32" id="riS-hM-Pav"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p9u-nQ-2Jz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7SX-Pz-JJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982" y="-348"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5hN-uC-qxi">
+            <objects>
+                <viewController id="BvV-qQ-g0G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQB-4e-iTo">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jL9-JL-6QU">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9Oo-CM-yGQ"/>
+                                </constraints>
+                                <string key="text">The girl leaps towards the man. The man quickly turns and aims at the girl. Boom!
+
+You wake up.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zlW-nN-x9r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jL9-JL-6QU" firstAttribute="leading" secondItem="zlW-nN-x9r" secondAttribute="leading" constant="20" id="R9r-tI-iGU"/>
+                            <constraint firstItem="zlW-nN-x9r" firstAttribute="trailing" secondItem="jL9-JL-6QU" secondAttribute="trailing" constant="20" id="z9t-WE-Kq7"/>
+                            <constraint firstItem="jL9-JL-6QU" firstAttribute="top" secondItem="zlW-nN-x9r" secondAttribute="top" constant="32" id="zsw-GH-XlW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gUr-7X-bZp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tnr-Q6-QsW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="331"/>
         </scene>
     </scenes>
     <resources>
