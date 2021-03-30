@@ -1,24 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t18-T0-UGf">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="zXV-Vf-bzy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wke-MV-mb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="t18-T0-UGf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9cT-JS-eGy">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dVR-tL-jXQ" kind="relationship" relationship="rootViewController" id="V0I-2d-MBa"/>
+                    </connections>
+                </navigationController>
             </objects>
+            <point key="canvasLocation" x="-208" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gUs-J0-gMF">
+            <objects>
+                <viewController id="dVR-tL-jXQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xEv-tb-c9I">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEZ-5R-bsS">
+                                <rect key="frame" x="0.0" y="694" width="390" height="30"/>
+                                <state key="normal" title="Leap through the door and roar!"/>
+                                <connections>
+                                    <segue destination="PBt-to-bvu" kind="show" id="ZAj-Pb-GOV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyW-67-yPc">
+                                <rect key="frame" x="0.0" y="752" width="390" height="30"/>
+                                <state key="normal" title="Stalk to the door, peek down the hallway."/>
+                                <connections>
+                                    <segue destination="bdX-xu-gjF" kind="show" id="RGk-LW-zPZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-EL-ZvN">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="xRa-GW-qsr"/>
+                                </constraints>
+                                <string key="text">An immense tiger walks into an empty room.
+
+A door opens into a hallway...
+
+What should she do?</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iPO-fJ-Sh8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iPO-fJ-Sh8" firstAttribute="trailing" secondItem="EJv-EL-ZvN" secondAttribute="trailing" constant="20" id="1uN-rt-1BH"/>
+                            <constraint firstItem="EJv-EL-ZvN" firstAttribute="top" secondItem="iPO-fJ-Sh8" secondAttribute="top" constant="32" id="CmF-zg-1C6"/>
+                            <constraint firstItem="WyW-67-yPc" firstAttribute="leading" secondItem="iPO-fJ-Sh8" secondAttribute="leading" id="bHd-YD-qNy"/>
+                            <constraint firstItem="iPO-fJ-Sh8" firstAttribute="bottom" secondItem="WyW-67-yPc" secondAttribute="bottom" constant="28" id="eLz-Nz-N7C"/>
+                            <constraint firstItem="EJv-EL-ZvN" firstAttribute="leading" secondItem="iPO-fJ-Sh8" secondAttribute="leading" constant="20" id="obI-nr-CfX"/>
+                            <constraint firstItem="iPO-fJ-Sh8" firstAttribute="trailing" secondItem="WyW-67-yPc" secondAttribute="trailing" id="pOv-RY-43L"/>
+                            <constraint firstItem="WyW-67-yPc" firstAttribute="top" secondItem="JEZ-5R-bsS" secondAttribute="bottom" constant="28" id="qcB-OI-wYF"/>
+                            <constraint firstItem="JEZ-5R-bsS" firstAttribute="leading" secondItem="iPO-fJ-Sh8" secondAttribute="leading" id="uZK-aw-ijY"/>
+                            <constraint firstItem="iPO-fJ-Sh8" firstAttribute="trailing" secondItem="JEZ-5R-bsS" secondAttribute="trailing" id="wOS-65-gJz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H6Z-R5-WqO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOO-xe-dZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QDI-gP-lze">
+            <objects>
+                <viewController id="PBt-to-bvu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bVE-gW-UhY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-KE-ebN">
+                                <rect key="frame" x="0.0" y="694" width="390" height="30"/>
+                                <state key="normal" title="Wait to see what happens next."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XF-gJ-PjL">
+                                <rect key="frame" x="0.0" y="752" width="390" height="30"/>
+                                <state key="normal" title="Attack the old man!"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pbV-c8-p7Z">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="sQx-fG-Im2"/>
+                                </constraints>
+                                <string key="text">An old man is startled out of his chair. But he recovers, and aims his rifle right at the tiger with a smile.
+
+What should she do?</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A4h-Wk-Ysx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6DN-KE-ebN" firstAttribute="leading" secondItem="A4h-Wk-Ysx" secondAttribute="leading" id="Unq-bQ-mJf"/>
+                            <constraint firstItem="A4h-Wk-Ysx" firstAttribute="trailing" secondItem="6DN-KE-ebN" secondAttribute="trailing" id="VI1-jd-jXl"/>
+                            <constraint firstItem="A4h-Wk-Ysx" firstAttribute="bottom" secondItem="5XF-gJ-PjL" secondAttribute="bottom" constant="28" id="Vxm-bd-Ixa"/>
+                            <constraint firstItem="5XF-gJ-PjL" firstAttribute="leading" secondItem="A4h-Wk-Ysx" secondAttribute="leading" id="W0Q-dc-4vn"/>
+                            <constraint firstItem="pbV-c8-p7Z" firstAttribute="top" secondItem="A4h-Wk-Ysx" secondAttribute="top" constant="32" id="fQw-qu-lPH"/>
+                            <constraint firstItem="5XF-gJ-PjL" firstAttribute="top" secondItem="6DN-KE-ebN" secondAttribute="bottom" constant="28" id="fye-Aj-BC9"/>
+                            <constraint firstItem="pbV-c8-p7Z" firstAttribute="leading" secondItem="A4h-Wk-Ysx" secondAttribute="leading" constant="20" id="kkK-r3-hhf"/>
+                            <constraint firstItem="A4h-Wk-Ysx" firstAttribute="trailing" secondItem="pbV-c8-p7Z" secondAttribute="trailing" constant="20" id="lg0-3M-NRD"/>
+                            <constraint firstItem="A4h-Wk-Ysx" firstAttribute="trailing" secondItem="5XF-gJ-PjL" secondAttribute="trailing" id="suf-T6-wvb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xZR-Eg-fHg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huV-fe-Qxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="-45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kCm-LG-q5F">
+            <objects>
+                <viewController id="bdX-xu-gjF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nYm-a7-D1p">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHp-mw-YfG">
+                                <rect key="frame" x="0.0" y="694" width="390" height="30"/>
+                                <state key="normal" title="Attack the old man!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krc-Pk-QDn">
+                                <rect key="frame" x="0.0" y="752" width="390" height="30"/>
+                                <state key="normal" title="Pad quietly down the hallway."/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="An old man sleeps in a chair in the hallway. He has a rifle." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-Mp-KSm">
+                                <rect key="frame" x="20" y="120" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7rc-CA-LON"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yzP-u8-Gx6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nbO-Mp-KSm" firstAttribute="leading" secondItem="yzP-u8-Gx6" secondAttribute="leading" constant="20" id="0en-Wi-KeW"/>
+                            <constraint firstItem="yzP-u8-Gx6" firstAttribute="trailing" secondItem="nbO-Mp-KSm" secondAttribute="trailing" constant="20" id="4ZC-65-IYe"/>
+                            <constraint firstItem="yzP-u8-Gx6" firstAttribute="bottom" secondItem="krc-Pk-QDn" secondAttribute="bottom" constant="28" id="9sk-nc-JnP"/>
+                            <constraint firstItem="yzP-u8-Gx6" firstAttribute="trailing" secondItem="YHp-mw-YfG" secondAttribute="trailing" id="Sli-58-y7l"/>
+                            <constraint firstItem="YHp-mw-YfG" firstAttribute="leading" secondItem="yzP-u8-Gx6" secondAttribute="leading" id="ZmK-kF-Pbb"/>
+                            <constraint firstItem="nbO-Mp-KSm" firstAttribute="top" secondItem="yzP-u8-Gx6" secondAttribute="top" constant="32" id="h5e-ra-D7h"/>
+                            <constraint firstItem="krc-Pk-QDn" firstAttribute="leading" secondItem="yzP-u8-Gx6" secondAttribute="leading" id="nDz-tb-UuB"/>
+                            <constraint firstItem="yzP-u8-Gx6" firstAttribute="trailing" secondItem="krc-Pk-QDn" secondAttribute="trailing" id="x8G-4y-18f"/>
+                            <constraint firstItem="krc-Pk-QDn" firstAttribute="top" secondItem="YHp-mw-YfG" secondAttribute="bottom" constant="28" id="zk8-gW-MEa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CYL-Oa-48B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ht-A9-o5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248" y="629"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
